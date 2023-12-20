@@ -1,0 +1,83 @@
+/* Order.css */
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Order List Container Styles */
+  .order-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Order Card Styles */
+  .order-card {
+    display: flex;
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Product Image Styles */
+  .product-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  /* Order Details Styles */
+  .order-details {
+    padding: 20px;
+  }
+  
+  .order-details h3 {
+    margin-top: 0;
+  }
+  
+  .order-details p {
+    margin: 10px 0;
+  }
+  
+  /* Details Line Styles */
+  .details-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Buttons Styles */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .order-again-btn,
+  .view-details-btn {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .order-again-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .view-details-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  

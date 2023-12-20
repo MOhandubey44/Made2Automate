@@ -1,0 +1,238 @@
+/* Home.css */
+
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .left-section {
+    flex: 1; /* Let the left section grow to take available space */
+  }
+  
+  .site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    margin-left: auto; /* Move the right section to the right */
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-icon {
+    height: 38px;
+    width: 45px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center align text */
+    }
+  
+    .left-section, .right-section {
+      width: 100%; /* Set full width for sections */
+      margin: 10px 0; /* Add margin for spacing */
+    }
+  }
+  
+/* Rest of your styles for the home page content can go here */
+.home-class{
+    background-color: darkgray;
+    
+}
+.home-main {
+  margin: 30px;
+  padding-left: 10px;
+  min-height: 100%;
+}
+
+/* Base styles for the boxes */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Distribute items with space between them */
+    gap: 20px; /* Gap between boxes */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Set maximum width for the container */
+    padding: 20px; /* Add padding to the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .box {
+    width: calc(20% - 20px); /* Set width for the boxes (20% of the container width minus the gap) */
+    max-width: 230px; /* Set maximum width for the boxes */
+    height: 200px; /* Set height for the boxes */
+    background-color: #ccc; /* Background color for the boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px; /* Add padding inside the boxes */
+  }
+  
+  /* Styles for the numbers */
+  .number {
+    text-align: center;
+  }
+  
+  .number h1 {
+    font-weight: bolder;
+    font-size: 5em;
+  }
+  
+  /* Apply different colors to numbers */
+  .box:nth-child(1) .number h1 {
+    color: blue; /* Color for the first number */
+  }
+  
+  .box:nth-child(2) .number h1 {
+    color: red; /* Color for the second number */
+  }
+  
+  .box:nth-child(3) .number h1 {
+    color: green; /* Color for the third number */
+  }
+  
+  .box:nth-child(4) .number h1 {
+    color: orange; /* Color for the fourth number */
+  }
+  
+  .box:nth-child(5) .number h1 {
+    color: purple; /* Color for the fifth number */
+  }
+  
+  .number p {
+    font-weight: bold;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .box {
+      width: calc(50% - 20px); /* Set 50% width for boxes on smaller screens */
+    }
+  }
+  
+/* Styling for the .total-Orders section */
+.total-Orders {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+  }
+  
+  /* Styles for the ordersNav */
+  .ordersNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #eee; /* Adding a bottom border for separation */
+  }
+  
+  /* Styles for the text "A Summary of your Orders" */
+  .span {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Styles for the order details */
+  .order {
+    margin-left: 15px;
+    padding: 10px;
+  }
+  
+  /* Styling for order details and description */
+  .order-detail {
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .order-detail h1 {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .description {
+    margin-left: 10px;
+    color: #666;
+  }
+  
+  .Quantity {
+    margin-left: 10px;
+    font-weight: lighter;
+    color: #888;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .ordersNav {
+      flex-direction: column;
+      text-align: center;
+    }
+    .span {
+      margin: 10px 0;
+    }
+    .order-detail {
+      border-left: none;
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+    .order-detail h1 {
+      font-size: 1.1rem;
+    }
+    .description, .Quantity {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+
+.name-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contact-detail{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-right-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    padding: 10px 20px;
+    background-color: #1c0aeb; /* Change button background color */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /* Additional styles for button appearance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
